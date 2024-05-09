@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastFood Website</title>
+    <link href="./assets/img/icon.jpg" rel="icon" />
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/solid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/brands.min.css"
+    />
+  </head>
+  <body>
+    <section id="Home">
+      <nav>
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/img/logo.png" />
+          </a>
+        </div>
+
+        <ul>
+          <li><a href="#Home" style="color: #fac031">Home</a></li>
+          <li><a href="#Menu">Menu</a></li>
+          <li><a href="#combo">Combo</a></li>
+          <li><a href="#Review">Review</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./order.html">Order</a></li>
+        </ul>
+
+        <form id="searchForm">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Tìm kiếm sản phẩm..."
+          />
+          <button type="button" onclick="searchProducts()">
+            <a href="#Menu" style="text-decoration: none; font-weight:bolder">Tìm kiếm</a>
+          </button>
+        </form>
+        <div class="icon">
+          <a
+            href="./giohang.html"
+            class="nav-item nav-link"
+            aria-label="Shoppingcart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a
+            href="./login.html"
+            class="nav-item nav-link"
+            aria-label="Đăng nhập"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+        </div>
+      </nav>
+      <div id="banner">
+        <div class="box-left">
+          <h2>
+            <span>THỨC ĂN</span>
+            <br />
+            <span>THƯỢNG HẠNG</span>
+          </h2>
+          <br />
+          <p>
+            Chuyên cung cấp các món ăn đảm bảo dinh dưỡng chất lượng 5 sao hợp
+            vệ sinh đến người dùng, phục vụ người dùng những món ăn hoàn hảo
+            nhất.
+          </p>
+          <button>Mua ngay</button>
+        </div>
+        <div class="box-right">
+          <img src="./assets//img/img_1.png" alt="" />
+          <img src="./assets/img/img_2.png" alt="" />
+          <img src="assets/img/img_3.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!--About-->
+
+    <div class="about" id="About">
+      <div class="about_main">
+        <div class="image">
+          <img src="./assets/img/usabout.png" width="150px" height="500px" />
+        </div>
+
+        <div class="about_text">
+          <h1><span>About Us</span></h1>
+          <h3>Why Choose us?</h3>
+          <p>
+            Chúng tôi tự hào là một nhà hàng đặt đồ ăn online nơi bạn có thể tìm
+            thấy mọi loại món ăn ngon và đặt hàng trực tuyến một cách dễ dàng và
+            thuận tiện, chúng tôi luôn mang đến cho khách hàng những bữa ăn chất
+            lượng và dịch vụ tốt nhất.<br />
+            <br />
+
+            Chúng tôi rất mong được phục vụ và làm hài lòng khách hàng. Hãy thử
+            đặt món ăn tại Hk Restaurant ngay hôm nay và trải nghiệm sự tiện lợi
+            và ngon miệng của dịch vụ đặt đồ ăn online của chúng tôi. Xin cảm
+            ơn!
+          </p>
+        </div>
+      </div>
+
+      <a href="./giohang.html" class="about_btn">Mua ngay</a>
+    </div>
+
+    <!--Menu-->
+
+    <div class="menu" id="Menu">
+      <h1><span>Our Menu</span></h1>
+
+      <div class="menu_box">
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/burger.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Hamburger</h2>
+
+            <h3>$5.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn" data-item-id="Hamburger "
+              >Mua ngay</a
+            >
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/my_y.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Spaghetti</h2>
+
+            <h3>$5.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/Cheese-Lasagna.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Lasagna</h2>
+
+            <h3>$3.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/piza.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Pizza</h2>
+
+            <h3>$10.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/banh-mi.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Bánh mỳ pate</h2>
+
+            <h3>$1.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/Hot_dog.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Hot Dog</h2>
+
+            <h3>$2.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/Nem_ran.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Nem rán</h2>
+
+            <h3>$5.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/pho_cuon.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Phở cuốn</h2>
+
+            <h3>$5.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/trung_cuon.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Trứng rán cuộn</h2>
+
+            <h3>$3.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/dui_ga_chien.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Đùi gà chiên</h2>
+
+            <h3>$5.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/kho_ga.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Khô gà lá chanh</h2>
+
+            <h3>$1.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="./assets/img/sandwich.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Sandwich</h2>
+
+            <h3>$2.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="./giohang.html" class="menu_btn">Mua ngay</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--combo-->
+
+    <div class="combo" id="combo">
+      <h1><span>Our Combo</span></h1>
+
+      <div class="combo_image_box">
+        <div class="combo_image">
+          <img src="./assets/img/combo-ga-ran.jpg" />
+
+          <h3>Combo gà rán</h3>
+          <p>6 miếng gà rán + 1 khoai tây chiên + 1 coca cola</p>
+          <a href="./giohang.html" class="combo_btn">Mua ngay</a>
+        </div>
+
+        <div class="combo_image">
+          <img src="./assets/img/combo_2.jpg" width="100%" height="100%" />
+
+          <h3>Combo burger</h3>
+          <p>1 đùi gà + 1 hamburger + 1 pepsi</p>
+          <a href="./giohang.html" class="combo_btn">Mua ngay</a>
+        </div>
+
+        <div class="combo_image">
+          <img src="./assets/img/combo-3.jpg" width="100%" height="100%" />
+          <h3>Combo đầy đủ</h3>
+          <p>1 đùi gà + 1 salat + 1 pepsi</p>
+          <a href="./giohang.html" class="combo_btn">Mua ngay</a>
+        </div>
+
+        <div class="combo_image">
+          <img src="./assets/img/combo4.jpg" />
+
+          <h3>Combo mỳ spagetti</h3>
+          <p>1 mỳ spagetti + 1 đùi gà + 1 pepsi</p>
+          <a href="./giohang.html" class="combo_btn">Mua ngay</a>
+        </div>
+
+        <div class="combo_image">
+          <img src="./assets/img/combo-ga.jpg" />
+
+          <h3>Combo đùi gà rán</h3>
+          <p>6 miếng đùi gà rán + 1 pepsi</p>
+          <a href="./giohang.html" class="combo_btn">Mua ngay</a>
+        </div>
+
+        <div class="combo_image">
+          <img src="./assets/img/commbo-6.jpg" />
+
+          <h3>Combo khổng lồ</h3>
+          <p>5 đùi gà + 1 Popcorn +4 gà miếng Nuggets + 2 Pepsi</p>
+          <a href="./giohang.html" class="combo_btn">Mua ngay</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review-->
+
+    <div class="review" id="Review">
+      <h1><span>Review</span></h1>
+
+      <div class="review_box">
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="./assets/img/gordon-james-ramsay.jpg" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">Gordon Ramsay</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Hôm nay, tôi đã thưởng thức một món ăn đặc biệt tại nhà hàng. Đơn
+              giản chỉ có thể mô tả bằng một từ: Tuyệt! hương vị cân đối, và bố
+              trí đẹp mắt. Sự kết hợp làm tôi mê mẩn. Dịch vụ nhanh nhẹn và
+              không gian thoải mái. Chắc chắn sẽ quay lại!
+            </p>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="./assets/img/johnny-depp-sparrow.jpg" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">Johnny Depp</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Bánh mỳ nhẹ nhàng, giòn mặt ngoài và mềm mịn bên trong. Hương vị
+              tinh tế, không quá ngấy, làm cho mỗi miếng bánh trở nên đặc sắc.
+              Bánh mỳ pate tại đây thực sự là một món ăn nhẹ tuyệt vời, làm hài
+              lòng khẩu vị mọi thực khách.
+            </p>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="./assets/img/taylor-swift.jpg" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">Taylor Swift</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Đó là một trải nghiệm ẩm thực tuyệt vời! Món nem rán ở đây thực sự
+              ngon miệng, với vỏ giòn và nhân thơm béo. Mỗi miếng nem là một hòa
+              quyện hương vị tuyệt vời. Khám phá món này là một cuộc phiêu lưu
+              ngon lành đáng nhớ!
+            </p>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="./assets/img/Elon-musk.webp" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">Elon Musk</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Spagetti ở đây thực sự ngon. Chắc chắn sẽ quay lại để thử thêm
+              nhiều món khác. 9.5/10.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="footer_main">
+        <div class="footer_tag">
+          <div class="logo-end">
+            <img src="./assets/img/logo.png" width="100px" height="50px" />
+            <p style="text-align: left; margin-left: 60px">
+              Cung cấp sản phẩm với chất lượng và an toàn cho quý khách
+            </p>
+          </div>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Quick Link</h2>
+          <div class="item">
+            <a href="#Home">Home</a>
+            <a href="#Menu">Menu</a>
+            <a href="#combo">Combo</a>
+            <a href="#Review">Review</a>
+            <a href="./about.html">About</a>
+            <a href="./order.html">Order</a>
+            <br>
+          </div>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Contact</h2>
+          <p>+84 12 3456 789</p>
+          <p>+84 12 5555 666</p>
+          <p>fastfood@gmail.com</p>
+          <p>fastfoodshop123@gmail.com</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Our Service</h2>
+          <p>Thứ 2 - Thứ 6</p>
+          <p>9:00 - 22:00</p>
+          <p>Thứ 7 - Chủ nhật</p>
+          <p>9:00 - 23:30</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Follows</h2>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/main.js"></script>
+    <script src="./assets/fontawesome-free-6.4.2-web/js/all.js"></script>
+    <script src="./assets/fontawesome-free-6.4.2-web/js/all.min.js"></script>
+    <script src="./assets/fontawesome-free-6.4.2-web/js/brands.js"></script>
+    <script src="./assets/fontawesome-free-6.4.2-web/js/brands.min.js"></script>
+    <script src="./assets/fontawesome-free-6.4.2-web/js/regular.js"></script>
+    <script src="./assets/fontawesome-free-6.4.2-web/js/regular.min.js"></script>
+    <script src="./assets/fontawesome-free-6.4.2-web/js/solid.js"></script>
+    <script src="./assets/fontawesome-free-6.4.2-web/js/solid.min.js"></script>
+  </body>
+</html>

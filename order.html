@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastFood Website</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/solid.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/brands.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesome-free-6.4.2-web/css/brands.min.css"
+    />
+  </head>
+  <body>
+    <section id="Home">
+      <nav>
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./assets/img/logo.png" />
+          </a>
+        </div>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+        
+          <li><a href="./order.html" style="color: #fac031">Order</a></li>
+        </ul>
+        <form id="searchForm">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Tìm kiếm sản phẩm..."
+          />
+          <button type="button" onclick="searchProducts()">
+            <a href="#Menu" style="text-decoration: none; font-weight:bolder">Tìm kiếm</a>
+          </button>
+        </form>
+        <div class="icon">
+          <a
+            href="./giohang.html"
+            class="nav-item nav-link"
+            aria-label="Shoppingcart"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a
+            href="./login.html"
+            class="nav-item nav-link"
+            aria-label="Đăng nhập"
+            ><i class="fa-regular fa-user"></i
+          ></a>
+        </div>
+      </nav>
+      <div id="banner">
+        <div class="box-left">
+          <h2>
+            <span style="font-family: mv boli">HOME / ORDER</span>
+          </h2>
+        </div>
+        <div class="box-right">
+          <img src="./assets//img/img_1.png" alt="" />
+          <img src="./assets/img/img_2.png" alt="" />
+          <img src="assets/img/img_3.png" alt="" />
+        </div>
+        <div class="to-bottom">
+          <a href="">
+            <img src="assets/img/to_bottom.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--Order-->
+
+    <div class="order" id="Order">
+      <h1><span>Order now</span></h1>
+
+      <div class="order_main">
+        <div class="order_image">
+          <img src="./assets/img/order_image.png" />
+        </div>
+
+        <form action="#">
+          <div class="input">
+            <p>Tên</p>
+            <input type="text" placeholder="Name" />
+          </div>
+
+          <div class="input">
+            <p>Email</p>
+            <input type="email" placeholder="abc123@gmail.com" />
+          </div>
+
+          <div class="input">
+            <p>SĐT</p>
+            <input type="tel" placeholder="SĐT" />
+          </div>
+
+          <div class="input">
+            <p>Tuổi</p>
+            <input type="date" placeholder="" />
+          </div>
+
+          <div class="input">
+            <p>Chọn món</p>
+            <input placeholder="Food name" />
+          </div>
+
+          <div class="input">
+            <p>Địa chỉ</p>
+            <input placeholder="Address" />
+          </div>
+
+          <a href="./giohang.html" class="order_btn">Mua ngay</a>
+        </form>
+      </div>
+    </div>
+
+    <!--Footer-->
+
+    <footer>
+      <div class="footer_main">
+        <div class="footer_tag">
+          <div class="logo-end">
+            <img src="./assets/img/logo.png" width="100px" height="50px">
+            <p style="text-align: left; margin-left: 60px;">Cung cấp sản phẩm với chất lượng và an toàn cho quý khách</p>
+
+          </div>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Quick Link</h2>
+          <div class="item">
+          <a href="#Home">Home</a>
+          <a href="#Menu">Menu</a>
+          <a href="#combo">Combo</a>
+          <a href="#Review">Review</a>
+          <a href="./about.html">About</a>
+          <a href="./order.html">Order</a>
+          <br>
+          </div>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Contact</h2>
+          <p>+84 12 3456 789</p>
+          <p>+84 12 5555 666</p>
+          <p>fastfood@gmail.com</p>
+          <p>fastfoodshop123@gmail.com</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Our Service</h2>
+          <p>Thứ 2 - Thứ 6</p>
+          <p>9:00 - 22:00</p>
+          <p>Thứ 7 - Chủ nhật</p>
+          <p>9:00 - 23:30</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Follows</h2>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
